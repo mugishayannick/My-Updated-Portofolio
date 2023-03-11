@@ -17,7 +17,7 @@
     box-sizing: inherit;
 }
 
-html{
+html {
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-size: 62.5%;
@@ -32,6 +32,7 @@ body {
     position: relative;
     z-index: 1;
 }
+
 h1,
 h2,
 h3,
@@ -55,6 +56,7 @@ li {
     max-width: 114rem;
     margin: 0 auto;
 }
+
 @media only screen and (max-width: 1200px) {
     .container {
         padding: 0 3rem;
@@ -66,7 +68,7 @@ li {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(0,0, 19);
+    background-color: rgb(0, 0, 19);
     z-index: 1;
     overflow: hidden;
 }
@@ -79,12 +81,14 @@ li {
     object-fit: cover;
     z-index: -1;
 }
+
 .nav {
     padding: 1.6rem 0;
     position: fixed;
     width: 100%;
     background: black;
 }
+
 .nav.fix.nav {
     position: fixed;
     top: 0;
@@ -92,20 +96,24 @@ li {
     width: 100%;
     background-color: var(--customColor);
     box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
-    z-index: 999;
+    z-index: 1;
 }
-.nav.fix-nav .logo h1 span{
+
+.nav.fix-nav .logo h1 span {
     color: #fff;
 }
+
 .navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .logo h1 {
     font: 2.5rem;
     color: #fff;
 }
+
 .logo h1 span {
     font-weight: bold;
     color: var(--customColor);
@@ -115,20 +123,23 @@ li {
     display: flex;
     align-items: center;
 }
+
 .nav-item:not(:last-child) {
     margin-right: .5rem;
 }
+
 .nav-link:link,
 .nav-link:visited {
     color: #fff;
     padding: .8rem 1rem;
-    transition: all 300ms ease; 
+    transition: all 300ms ease;
 }
 
 .nav-link:hover {
     border-radius: .3rem;
     background-color: var(--customColor);
 }
+
 .hamburger,
 .top-nav {
     display: none;
@@ -146,10 +157,12 @@ li {
         transition: all 500ms ease-in-out;
         z-index: 100;
     }
+
     .menu.show {
         left: 0;
         width: 100%;
-    } 
+    }
+
     .top-nav {
         display: flex;
         align-items: center;
@@ -157,6 +170,7 @@ li {
         background-color: var(--customColor);
         padding: 1rem 1.6rem;
     }
+
     .log h1 span,
     .top-nav .close {
         color: #fff;
@@ -184,6 +198,7 @@ li {
         align-items: flex-start;
         padding: 1rem 1.6rem;
     }
+
     body.show::before {
         content: '';
         position: absolute;
@@ -206,20 +221,24 @@ li {
     right: 5%;
     transform: translate(0, -50%);
     color: #fff;
+    z-index: -1;
 }
 
 .hero h3 {
     font-weight: 400;
     font-size: 2rem;
 }
+
 .hero h1 {
     font-size: 9rem;
     margin: 0;
 }
+
 .hero h4 span {
     color: var(--customColor);
     text-decoration: underline;
 }
+
 .hero a:link,
 .hero a:visited {
     display: inline-block;
@@ -229,6 +248,7 @@ li {
     color: #fff;
     margin-top: 2rem;
 }
+
 .hero a:hover {
     background-color: transparent;
 }
@@ -247,20 +267,24 @@ li {
     .hero {
         transform: translate(5%, 50%);
     }
+
     .hero h1 {
         font-size: 6rem;
     }
 }
+
 @media only screen and (max-width:768px) {
     .hero h1 {
         font-size: 5rem;
     }
 }
+
 @media only screen and (max-width:567px) {
     .hero {
         top: 65%;
         transform: translate(0, -50%);
     }
+
     .hero h1 {
         font-size: 4rem;
     }
@@ -279,7 +303,9 @@ li {
     bottom: 5%;
     right: 10%;
     color: #fff;
+    z-index: -1;
 }
+
 .icons span:not(:last-child) {
     margin-right: 1rem;
 }
@@ -295,9 +321,9 @@ li {
 }
 
 @media only screen and (max-width: 967px) {
-     .icons {
-         display: none;
-     }
+    .icons {
+        display: none;
+    }
 }
 
 .control {
@@ -312,6 +338,7 @@ li {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -320,6 +347,7 @@ li {
 .control.open {
     right: 0;
 }
+
 .control .widget {
     position: absolute;
     left: -3.4rem;
@@ -331,15 +359,18 @@ li {
     background-color: #fff;
     text-align: center;
 }
+
 .control .widget {
     font-size: 2rem;
     animation: soin 2s linear infinite;
 }
+
 .control .colors {
     background-color: #fff;
     padding: 1rem .8rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 }
+
 .control .colors span {
     display: block;
     width: 1.9rem;
@@ -357,23 +388,29 @@ li {
 .control .colors span:nth-child(1) {
     background-color: var(--blue);
 }
+
 .control .colors span:nth-child(2) {
     background-color: var(--orange);
 }
+
 .control .colors span:nth-child(3) {
     background-color: var(--purple);
 }
+
 .control .colors span:nth-child(4) {
     background-color: var(--cyan);
 }
+
 /* about */
 .section {
     padding: 5rem 0 7rem 0;
     overflow-x: hidden;
 }
+
 .about {
     margin-top: 5rem;
 }
+
 .about-center {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
@@ -384,12 +421,14 @@ li {
     margin: 4rem 0 7rem 0;
     text-align: center;
 }
+
 .title h1 {
     font-size: 3rem;
     display: inline-block;
     position: relative;
     z-index: 0;
 }
+
 .title h1:after {
     content: '';
     position: absolute;
@@ -406,7 +445,7 @@ li {
     height: 60rem;
     width: 100%;
     object-fit: inherit;
-    
+
 }
 
 .right h1 {
@@ -442,17 +481,21 @@ a.btn:hover,
     color: inherit;
 
 }
+
 a.btn:hover,
 .btn-form:active {
     transform: translateY(0);
 }
+
 @media only screen and (max-width: 996px) {
     .right h1 {
         font-size: 1.5rem;
     }
+
     a.btn {
         padding: .7rem 1.8rem;
     }
+
     .left img {
         height: 40rem;
         max-width: 25rem;
@@ -479,13 +522,16 @@ a.btn:hover,
 .theme {
     background-color: #000;
 }
+
 .theme .title {
     color: #fff;
 }
+
 .services-center {
     display: flex;
     grid-template-columns: repeat(auto-fit, minimax(25rem, 2fr));
     gap: 5rem;
+    cursor: pointer;
 }
 
 .services {
@@ -518,7 +564,7 @@ a.btn:hover,
 
 .services:hover {
     background-color: var(--customColor);
-    
+
 }
 
 .services span:hover {
@@ -531,7 +577,7 @@ a.btn:hover,
 
 .skills-box:not(:last-child) {
     margin-bottom: 1.9rem;
-    
+
 }
 
 .skills-box h4 {
@@ -539,6 +585,7 @@ a.btn:hover,
     color: #888;
     font-weight: 500;
 }
+
 .skills-box .skills-ilt {
     width: 100%;
     position: relative;
@@ -546,6 +593,7 @@ a.btn:hover,
     background-color: #ccc;
     border-radius: .5rem;
 }
+
 .skills-box .skills-bar {
     background-color: var(--customColor);
     height: .4rem;
@@ -554,12 +602,15 @@ a.btn:hover,
 .skills-box .html {
     width: 95%;
 }
+
 .skills-box .nodejs {
     width: 86%;
 }
+
 .skills-box .javascript {
     width: 75%;
 }
+
 .skills-box .mongodb {
     width: 95%;
 }
@@ -570,14 +621,17 @@ a.btn:hover,
     right: 0;
     font-size: 1.4rem;
 }
+
 .skills-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6rem;
 }
+
 .right h3 {
     margin-bottom: 1rem;
 }
+
 .right p {
     margin-bottom: 2rem;
 }
@@ -592,13 +646,16 @@ a.btn:hover,
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0 2rem;
+    cursor: pointer;
 }
+
 
 .blog-box {
     width: 100%;
     box-shadow: 0 0 3px rgba(60, 72, 88, .8);
 
 }
+
 .image-container {
     height: 25rem;
 }
@@ -637,6 +694,7 @@ a.btn:hover,
         gap: 2rem;
     }
 }
+
 @media only screen and (max-width: 567px) {
     .blog-center {
         grid-template-columns: 1fr;
@@ -650,31 +708,39 @@ a.btn:hover,
     gap: 3rem;
 
 }
+
 .left h2 {
     font-size: 2.5rem;
 }
+
 .left p {
     font-size: 1.6rem;
     margin-bottom: 2rem;
 }
+
 .left div {
     display: flex;
     align-items: center;
     margin-bottom: 1.5rem;
 }
+
 .left div .content {
     text-align: center;
 }
+
 .left .icon {
     margin-right: 2rem;
     font-size: 2.3rem;
     color: var(--customColor);
 }
+
 .form h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-.form input,.form textarea {
+
+.form input,
+.form textarea {
     font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     padding: 1rem 0;
@@ -686,6 +752,7 @@ a.btn:hover,
     border: none;
     border: 1px solid #ccc;
 }
+
 .form .right div {
     display: flex;
 }
@@ -694,21 +761,26 @@ a.btn:hover,
     flex: 1 1 50%;
 
 }
+
 .form textarea {
     width: 100%;
     resize: vertical;
     margin-bottom: 3rem;
 }
+
 @media only screen and (max-width: 768px) {
-    .contact-center{
+    .contact-center {
         grid-template-columns: 1fr;
     }
+
     .contact-center .left {
         text-align: left;
     }
+
     .left div .content h3 {
         font-size: 1.6rem;
     }
+
     .left div .content span {
         font-size: 1.5rem;
     }
@@ -720,10 +792,10 @@ footer {
     text-align: center;
 }
 
-footer p{
+footer p {
     color: white;
 }
 
-footer p span{
+footer p span {
     color: var(--customColor);
 }
